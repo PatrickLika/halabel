@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: halabel
-          image: patricklika/halabel@sha256:6f94b2a337e8cc24a3c19d994c720d4553f9cfbff7bfd359460509c4a426f618
+          image: patricklika/halabel:linux-amd64
           imagePullPolicy: Always
           ports:
             - containerPort: 9090
