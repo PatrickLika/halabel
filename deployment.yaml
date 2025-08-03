@@ -12,11 +12,9 @@ spec:
       labels:
         app: halabel
     spec:
-      imagePullSecrets:
-        - name: dockerhub-auth
       containers:
         - name: halabel
-          image: patricklika/halabel@sha256:7f1ffc53c967617559f73d0330cc0d749c51f07792710ea10a19f5ccbcd9149c
+          image: patricklika/halabel:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 9090
